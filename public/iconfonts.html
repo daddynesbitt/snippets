@@ -28,6 +28,17 @@
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
+            
+            .icon-alone {
+              display: inline-block; /* Fix for clickability issue in WebKit */
+            }
+            
+            .screen-reader-text { /* Reusable, toolbox kind of class */
+              position: absolute;
+              top: -9999px;
+              left: -9999px;
+            }
+            
         </style>
     </head>
     <body>
@@ -35,5 +46,10 @@
             <span aria-hidden="true" data-icon="&#xe907;"></span>
             Stats
         </h2>
+            <h2>Stand-Alone Icons</h2>
+            <a href='#RSS' class="icon-alone">
+                <span aria-hidden="true" data-icon="&#xe907;"></span>
+                <span class="screen-reader-text">RSS</span>
+            </a>
     </body>
 </html>
